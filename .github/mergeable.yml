@@ -1,0 +1,20 @@
+mergeable:
+  pull_requests:
+    # Minimum of 5 approvals is needed.
+    approvals: 5
+
+    # Regular expression to be tested on the title. Not mergeable when true.  
+    title: 'wip'
+
+    # Only mergeable when milestone is as specified below.
+    milestone: 'version 1'
+
+    # Only mergeable when Project is as specified below
+    project: 'Alpha'
+
+    # exclude any of the mergeable validation above. A comma separated list. For example, the following will exclude validations for approvals and label.
+    exclude: 'approvals, label'
+
+  issues:
+      # Regular expression. In this example, whenever a issues has a label with the word 'wip'
+      label: 'wip|do not merge|experimental'
