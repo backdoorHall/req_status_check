@@ -1,10 +1,10 @@
 mergeable:
   pull_requests:
     # Minimum of 5 approvals is needed.
-    approvals: 5
+    approvals: 1
 
     # Regular expression to be tested on the title. Not mergeable when true.  
-    title: 'wip'
+    title: 'fixed'
 
     # Only mergeable when milestone is as specified below.
     milestone: 'version 1'
